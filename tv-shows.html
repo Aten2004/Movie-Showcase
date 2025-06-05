@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Shows | MVDB</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/movies.css" />
+  
+</head>
+<body>
+  <div class="page-container">
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" src="../images/MVDB_Logo.png" alt="MVDB Logo" />
+      </a>
+
+      <button class="menu-toggle icon-button" id="mobile-menu-toggle">&#9776;</button>
+      <div class="nav-center">
+        <nav class="nav-bar" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html" class="active">TV Shows</a></li>
+          </ul>
+          <div class="language-toggle mobile-only">
+            <button id="lang-th" class="lang-btn">ไทย</button>
+            <button id="lang-en" class="lang-btn">EN</button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header-right desktop-only">
+        <div class="language-toggle">
+          <button id="lang-th" class="lang-btn">ไทย</button>
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <h2 id="all-tv-title" class="section-title"></h2>
+      <div id="tv-grid" class="grid-container"></div>
+      <div class="load-more-container">
+        <button id="load-more-btn" class="btn-load"></button>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p id="footer-text"></p>
+      </div>
+      <a href="https://www.themoviedb.org/" target="_blank" class="tmdb-logo" rel="noopener noreferrer">
+        <img src="../images/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="TMDB Logo" />
+      </a>
+    </footer>
+  </div>
+
+  <script src="../JS/lang.js"></script>
+  <script src="../JS/tv-shows.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie List</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+
+</head>
+
+<body>
+
+  <div class="page-container">
+    <!-- ======= HEADER (Topbar with logo + nav + language toggle) ======= -->
+    <header class="header">
+      <a href="index.html">
+          <img class="logo" src="../images/MVDB_Logo.png" alt="MVDB Logo" />
+      </a>
+
+      <button class="menu-toggle icon-button" id="mobile-menu-toggle">&#9776;</button>
+      <div class="nav-center">
+        <nav class="nav-bar" id="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+          </ul>
+
+          <div class="language-toggle mobile-only">
+            <button id="lang-th" class="lang-btn">ไทย</button>
+            <button id="lang-en" class="lang-btn">EN</button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header-right desktop-only">
+        <div class="language-toggle">
+          <button id="lang-th" class="lang-btn">ไทย</button>
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======= HERO SECTION (intro + search bar) ======= -->
+    <section class="hero-section">
+      <h1>Welcome.</h1>
+      <p>Millions of movies and TV shows waiting for you to explore.</p>
+
+      <div class="hero-search">
+        <div class="search-container">
+          <!-- Search input with live result popup -->
+          <input type="text" id="search-Input" placeholder="Search..." />
+          <div id="search-result" class="search-result-popup"></div>
+        </div>
+        <button id="search-Btn">Search</button>
+      </div>
+    </section>
+
+    <!-- ======= TRENDING SECTION (3 carousels: movie / tv / animation) ======= -->
+    <main class="main-content">
+      <section class="trending-section">
+        <!-- Trending Movies -->
+        <h2></h2>
+        <div class="carousel-wrapper">
+          <button class="arrow-custom left" id="scroll-left">
+            <img src="../images/next.png" alt="left" class="arrow-icon" style="transform: rotate(180deg);" />
+          </button>
+          <div class="movie-carousel" id="carousel"></div>
+          <button class="arrow-custom right" id="scroll-right">
+            <img src="../images/next.png" alt="right" class="arrow-icon" />
+          </button>
+        </div>
+
+        <!-- Trending TV Shows -->
+        <h2 id="tv-section-title"></h2>
+        <div class="carousel-wrapper">
+          <button class="arrow-custom left" id="tv-scroll-left">
+            <img src="../images/next.png" alt="left" class="arrow-icon" style="transform: rotate(180deg);" />
+          </button>
+          <div class="movie-carousel" id="tv-carousel"></div>
+          <button class="arrow-custom right" id="tv-scroll-right">
+            <img src="../images/next.png" alt="right" class="arrow-icon" />
+          </button>
+        </div>
+
+        <!-- Trending Animation -->
+        <h2 id="animation-title"></h2>
+        <div class="carousel-wrapper">
+          <button class="arrow-custom left" id="animation-scroll-left">
+            <img src="../images/next.png" alt="left" class="arrow-icon" style="transform: rotate(180deg);" />
+          </button>
+          <div class="movie-carousel" id="animation-carousel"></div>
+          <button class="arrow-custom right" id="animation-scroll-right">
+            <img src="../images/next.png" alt="right" class="arrow-icon" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= FOOTER (with TMDB attribution) ======= -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p id="footer-text"></p>
+      </div>
+      <a href="https://www.themoviedb.org/" target="_blank" class="tmdb-logo" rel="noopener noreferrer">
+        <img src="../images/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" 
+             alt="TMDB Logo">
+      </a>
+    </footer>
+
+  </div>
+
+  <!-- ======= Scripts: language switcher and dynamic rendering ======= -->
+  <script src="../JS/lang.js"></script>
+  <script src="../JS/script.js"></script>
+  
+</body>
+</html>

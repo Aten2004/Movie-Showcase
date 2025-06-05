@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Detail</title>
+  <link rel="stylesheet" href="../CSS/detail.css" />
+
+</head>
+<body>
+  <div class="page-container">
+
+    <!-- ======= HEADER (Top navigation bar + search + language toggle + share) ======= -->
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" src="../images/MVDB_Logo.png" alt="MVDB Logo" />
+      </a>
+
+      <div class="header-right">
+        <!-- Search input with popup suggestion -->
+        <div class="search-bar-inline">
+          <input type="text" id="search-Input" placeholder="ค้นชื่อหนัง..." />
+          <button id="search-Btn">ค้นหา</button>
+          <div id="search-result" class="search-result-popup"></div>
+        </div>
+
+        <!-- Language toggle and share button -->
+        <div class="header-actions">
+          <div class="language-toggle">
+            <button id="lang-th" class="lang-btn">ไทย</button>
+            <button id="lang-en" class="lang-btn">EN</button>
+          </div>
+          <button id="share-btn" class="share-btn"></button>
+          <!-- Hidden canvas used for image sharing -->
+          <canvas id="share-canvas" style="display: none;"></canvas>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======= MAIN CONTENT (Dynamic movie detail section) ======= -->
+    <main class="main-content">
+      <section class="movie-hero" id="movie-detail"></section>
+    </main>
+
+    <!-- ======= FOOTER (Attribution to TMDB) ======= -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p id="footer-text"></p>
+      </div>
+      <a href="https://www.themoviedb.org/" target="_blank" class="tmdb-logo" rel="noopener noreferrer">
+        <img src="../images/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" 
+             alt="TMDB Logo" />
+      </a>
+    </footer>
+
+  </div>
+
+  <!-- ======= SCRIPTS ======= -->
+  <script src="../JS/lang.js"></script>
+  <script src="../JS/detail.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+  <!-- Toast Notification (for success/error feedback) -->
+  <div id="toast-notify"></div>
+
+</body>
+</html>
