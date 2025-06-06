@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = '95b0232f4ff64af08ccdfdeffa7844ab';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const language = localStorage.getItem('language') || 'th';
 const langText = LANG[language];
