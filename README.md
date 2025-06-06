@@ -1,5 +1,7 @@
 # Movie Showcase Website using TMDB API - Built with HTML/CSS/JS
 
+https://candid-souffle-be8d40.netlify.app/
+
 Hi there!  
 This is a movie showcase website I built from scratch as a personal project to practice HTML, CSS, and vanilla JavaScript — no frameworks, no backend. It fetches data from the [TMDB](https://www.themoviedb.org/) API and displays trending movies, TV shows, and animations.
 
